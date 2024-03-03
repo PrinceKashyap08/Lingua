@@ -1,0 +1,135 @@
+/* --------------- Map-style ------------------ */ 
+.map{
+    position: relative;
+    margin-top: 140px;
+    iframe{
+        width: 100%;
+        height: 500px;
+    }
+}
+/* --------------- /Map-style ------------------ */ 
+
+/* --------------- Contact-style ------------------ */ 
+.contact{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    padding-bottom: 100px;
+    background: #f8f8f8;
+    .contact-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+        .contactLeft{
+            .contact-detail{
+                h3{
+                    font-size: 2rem;
+                    font-weight: 500;
+                    padding-bottom: 30px;
+                }
+                ul{
+                    display: grid;
+                    grid-template-columns: 30px 1fr;
+                    row-gap: 10px;
+                    span{
+                        font-size: 1.5rem;
+                        i{
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                            color: rgba(0, 0, 0, 0.45);
+                        }
+                    }
+                    li{
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        color: rgba(0, 0, 0, 0.45);
+                    }
+                }
+            }
+        }
+        .contactRight{
+            position: relative;
+            margin-top: -200px;
+            form{
+                padding: 40px;
+                background: #ffffff;
+                border: solid 1px #ebebeb;
+                h3{
+                    font-size: 2rem;
+                    font-weight: 600;
+                    padding-bottom: 30px;
+                }
+                .contact-input{
+                    display: flex;
+                    gap: 20px;
+                    margin-bottom: 20px;
+                    input{
+                        width: 100%;
+                        padding: 15px 0;
+                        border: none;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+                        font-size: 1.4rem;
+                        outline: none;
+                    }
+                }
+                .contactInput-100{
+                    margin-bottom: 20px;
+                    textarea{
+                        width: 100%;
+                        height: 150px;
+                        padding: 15px 0;
+                        border: none;
+                        font-size: 1.4rem;
+                        border-bottom: 1px solid rgba(13, 12, 12, 0.4);
+                        resize: none;
+                        outline: none;
+                    }
+                }
+                button{
+                    width: 100%;
+                    height: 50px;
+                    color: #ffffff;
+                    border: none;
+                    font-size: 1.4rem;
+                    background: #2e21df;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+/* --------------- /Contact-style ------------------ */ 
+
+/* --------------- Responsive-style ------------------ */ 
+@media(max-width: 992px){
+    .contact{
+        .contact-container{
+            grid-template-columns: repeat(1,1fr);
+            row-gap: 50px;
+    
+            .contactRight{
+                margin-top: 0;
+            }
+        }
+    }
+}
+@media(max-width: 768px){
+    .map{
+        margin-top: 80px;
+    }
+}
+@media(max-width: 568px){
+    .contact{
+        .contact-container{
+            padding: 0 10px;
+            .contactRight{
+                form{
+                    .contact-input{
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
+/* --------------- /Responsive-style ------------------ */ 

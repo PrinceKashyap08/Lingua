@@ -1,0 +1,247 @@
+/* ------------HeadLink-style------------- */
+.HeadLink {
+    width: 100%;
+    height: 50px;
+    margin-top: 140px;
+    background: #f1f1f1;
+
+    .HeadLink-container {
+        height: 100%;
+
+        ul {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            gap: 10px;
+
+            li {
+                font-size: 3rem;
+                color: rgba(0, 0, 0, 0.3);
+
+                a {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    color: rgba(0, 0, 0, 0.3);
+                    transition: 0.3s ease;
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ------------/HeadLink-style------------- */
+
+/* ------------Learn-style------------- */
+.Learn {
+    width: 100%;
+    height: auto;
+    background: #f8f8f8;
+    padding: 100px 0;
+
+    .learn-container {
+        h2 {
+            padding: 0 10px;
+            font-size: 3rem;
+            padding-bottom: 30px;
+        }
+
+        .owl-carousel {
+            position: relative;
+            padding: 10px;
+
+            .card {
+                h3 {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    text-align: center;
+                    margin-top: 10px;
+                    color: #252525;
+                }
+            }
+        }
+    }
+}
+
+/* ------------/Learn-style------------- */
+
+/* ------------CourseCard-style------------- */
+.CourseCard {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    background: #f8f8f8;
+
+    .CourseCard-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+
+        .CourseCard-item {
+            height: 100%;
+
+            .CourseCard-img {
+                height: auto;
+            }
+
+            .CourseCard-content {
+                border-left: 1px solid rgba(0, 0, 0, 0.1);
+                border-right: 1px solid rgba(0, 0, 0, 0.1);
+                border-left: 1px solid rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                background: #fff;
+
+                h3 {
+                    font-size: 2rem;
+                    padding-bottom: 5px;
+                }
+
+                span {
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 0.4);
+                }
+
+                p {
+                    padding-top: 20px;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 0.4);
+                }
+            }
+
+            .CourseCard-info {
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                border-left: 1px solid rgba(0, 0, 0, 0.1);
+                border-right: 1px solid rgba(0, 0, 0, 0.1);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #fff;
+
+                .CourseCard-number {
+                    p {
+                        font-size: 1.2rem;
+                        color: rgba(0, 0, 0, 0.4);
+
+                        i {
+                            margin-right: 5px;
+                            color: rgba(0, 0, 0, 0.4);
+                        }
+
+                    }
+                }
+
+                .CourseCard-button {
+                    button {
+                        background: #2e21df;
+                        border: none;
+                        font-size: 1.2rem;
+                        padding: 6px 16px;
+                        color: #f8f8f8;
+                    }
+                }
+            }
+        }
+    }
+
+    .CourseCard-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        button {
+            width: 180px;
+            height: 50px;
+            font-size: 1.4rem;
+            background: transparent;
+            color: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
+}
+
+/* ------------/CourseCard-style------------- */
+
+/* ------------Responsive-style------------- */
+@media(max-width: 992px) {
+    .CourseCard {
+        .CourseCard-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .HeadLink {
+        margin-top: 80px;
+    }
+
+    .CourseCard {
+        .CourseCard-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+        }
+    }
+
+    .Learn {
+    
+        .learn-container {
+            h2 {
+               font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media(max-width:568px) {
+    .HeadLink {
+        margin-top: 80px;
+
+        .HeadLink-container {
+            padding: 0 10px;
+        }
+    }
+
+    .Learn {
+        .learn-container {
+            padding: 0 10px;
+        }
+    }
+
+    .CourseCard {
+        .CourseCard-container {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 0 10px;
+
+            .CourseCard-item {
+                height: 100%;
+                .CourseCard-content {
+                    h3 {
+                        font-size: 1.8rem;
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+        }
+        .CourseCard-btn {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+/* ------------/Responsive-style------------- */

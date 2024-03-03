@@ -1,0 +1,76 @@
+.town{
+    padding-top: 180px;
+}
+
+/* ---------------Teacher-style---------------*/ 
+.Teacher{
+    width: 100%;
+    height: auto;
+    padding: 80px 0;
+    background: #f8f8f8;
+    h2{
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .teacher-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+        padding-top: 50px;
+        .teacher-items{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: #fff;
+            padding: 40px 40px;
+            .teacher-img{
+                width: 70px;
+                height: 70px;
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .teacher-info{
+                h3{
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 1.4rem;
+                    color: #a5a5a5;
+                }
+            }
+        }
+    }
+}
+/* ---------------/Teacher-style---------------*/ 
+
+/* ---------------Responsive-style---------------*/ 
+@media(max-width: 992px){
+    .Teacher{
+        h2{
+            font-size: 3rem;
+        }
+        .teacher-container{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+@media(max-width: 768px){
+    .Teacher{
+        h2{
+            font-size: 2.5rem;
+        }
+        .teacher-container{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+}
+@media(max-width: 568px){
+    .town{
+        padding-top: 100px;
+    }
+}
+/* ---------------/Responsive-style---------------*/ 

@@ -1,0 +1,252 @@
+/* -------------  OurBlo-style  --------------- */
+.OurBlog-top {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 180px;
+    background: #f8f8f8;
+
+    .OureBlogtop-container {
+        padding-bottom: 100px;
+
+        h3 {
+            font-size: 3rem;
+            padding-bottom: 30px;
+        }
+
+        .Ourblog-box {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 30px;
+
+            .OurBlog-items {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(46, 33, 223, 0.7);
+                    transition: 0.5s ease;
+                }
+
+                &:hover::after {
+                    background: transparent;
+                }
+
+                .OurBlogtop-overlay {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    bottom: 50%;
+                    transform: translate(-50%);
+                    z-index: 10;
+
+                    h3 {
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        color: #f8f8f8;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .OurBlogbottom-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+
+        .OurBlog-img {
+            position: relative;
+            overflow: hidden;
+
+            .Ourblog-overlay {
+                position: absolute;
+                top: 70%;
+                width: 90%;
+                height: 100%;
+                background: #fff;
+                padding: 30px 40px;
+                transition: 0.3s ease;
+
+                h3 {
+                    text-transform: uppercase;
+                    color: rgba(0, 0, 0, 0.45);
+                    padding-bottom: 5px;
+                }
+
+                h2 {
+                    font-size: 3rem;
+                    padding-bottom: 20px;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    line-height: 2;
+                    color: rgba(0, 0, 0, 0.45);
+                    padding-bottom: 20px;
+                }
+
+                button {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    width: 200px;
+                    border: none;
+                    background: transparent;
+                    font-size: 1.4rem;
+                    color: #2e21df;
+                    cursor: pointer;
+
+                    &:hover img {
+                        transform: translateX(5px);
+                    }
+
+                    img {
+                        transition: 0.3s ease;
+                        width: 12px;
+                    }
+                }
+            }
+
+            &:hover .Ourblog-overlay {
+                top: 0;
+            }
+
+        }
+    }
+    .OurBlog-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 80px;
+        padding-bottom: 30px;
+        button {
+            width: 180px;
+            height: 50px;
+            font-size: 1.4rem;
+            background: transparent;
+            color: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
+}
+
+/* -------------  /OurBlo-style  --------------- */
+
+/* -------------  Responsive-style  --------------- */
+@media(max-width: 1024px){
+    .OurBlog-top .OurBlogbottom-container .OurBlog-img .Ourblog-overlay {
+        top: 60%;
+    }
+}
+@media(max-width: 992px) {
+    .OurBlog-top {
+        margin-top: 150px;
+
+        .OureBlogtop-container {
+            padding-bottom: 100px;
+
+
+            .Ourblog-box {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .OurBlogbottom-container {
+            grid-template-columns: repeat(1, 1fr);
+            .OurBlog-img{
+                .Ourblog-overlay{
+                    top: 78%;
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width: 768px) {
+    .OurBlog-top {
+        margin-top: 80px;
+
+        .OureBlogtop-container {
+            padding-bottom: 100px;
+            h3{
+                font-size: 2.5rem;
+            }
+        }
+        .OurBlogbottom-container {
+            grid-template-columns: repeat(1, 1fr);
+            .OurBlog-img{
+                .Ourblog-overlay{
+                    top: 72%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 568px) {
+    .OurBlog-top{
+        padding-top: 80px;
+        .OureBlogtop-container{
+            padding: 0 10px;
+            padding-bottom: 50px;
+            .Ourblog-box{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        .OurBlogbottom-container{
+            padding: 0 10px;
+            .OurBlog-img{
+                .Ourblog-overlay{
+                    top: 65%;
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 415px) {
+    .OurBlog-top .OurBlogbottom-container .OurBlog-img .Ourblog-overlay {
+        padding: 15px 20px;
+        top: 68%;
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.4;
+            padding-bottom: 10px;
+        }
+    }
+
+}
+@media (max-width: 280px){
+    .OurBlog-top .OurBlogbottom-container .OurBlog-img .Ourblog-overlay {
+        padding: 15px 20px;
+        top: 56%;
+    }
+}
+
+/* -------------  /Responsive-style  --------------- */
