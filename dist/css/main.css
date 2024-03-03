@@ -40,9 +40,12 @@ img {
   height: 100vh;
   background: #fff;
   z-index: 10000000;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   top: 0;
   left: 0;
 }
@@ -67,9 +70,12 @@ img {
   border-bottom: solid 1px #ebebeb;
 }
 .header .topBoxs .topHead {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   height: 100%;
 }
 .header .topBoxs .topHead .topHead-left p {
@@ -78,13 +84,17 @@ img {
   color: rgba(0, 0, 0, 0.45);
 }
 .header .topBoxs .topHead .topHead-right {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   gap: 30px;
 }
 .header .topBoxs .topHead .topHead-right .headLang {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 .header .topBoxs .topHead .topHead-right .headLang p {
   font-size: 1.2rem;
@@ -127,6 +137,7 @@ img {
   color: rgba(0, 0, 0, 0.8);
 }
 .header .topBoxs .topHead .topHead-right .headLinks {
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
@@ -136,6 +147,7 @@ img {
   color: rgba(0, 0, 0, 0.45);
 }
 .header .topBoxs .topHead .topHead-right .headLinks ul {
+  display: -ms-flexbox;
   display: flex;
   gap: 5px;
   gap: 20px;
@@ -150,9 +162,12 @@ img {
   background: white;
 }
 .header .navbarBox .navbar {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   height: 80px;
 }
 .header .navbarBox .navbar .logo a {
@@ -161,6 +176,7 @@ img {
   color: #2e21df;
 }
 .header .navbarBox .navbar .nav-menu {
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
@@ -183,8 +199,10 @@ img {
   color: rgba(0, 0, 0, 0.8);
 }
 .header .navbarBox .navbar .navRight {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   gap: 30px;
 }
 .header .navbarBox .navbar .navRight .navSearch i {
@@ -195,9 +213,12 @@ img {
 .header .navbarBox .navbar .navRight .navCart {
   width: 40px;
   height: 40px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   border-radius: 50%;
   background: #f1f1f1;
   cursor: pointer;
@@ -227,10 +248,14 @@ img {
   height: 540px;
 }
 .hero .hero-container {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   height: 100%;
   gap: 20px;
   padding-top: 150px;
@@ -281,9 +306,12 @@ img {
   z-index: -1;
 }
 .popular .popular-title {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 50px 30px;
 }
 .popular .popular-title h2 {
@@ -343,9 +371,12 @@ img {
   color: rgba(0, 0, 0, 0.45);
 }
 .popular .popular-boxs .popular-content .popular-items .popular-info {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   margin-top: 40px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -367,9 +398,12 @@ img {
   bottom: 0;
 }
 .tutor .tutor-title {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 50px 30px;
 }
 .tutor .tutor-title h2 {
@@ -413,9 +447,12 @@ img {
 }
 .tutor .tutor-container .tutor-items ul {
   padding-top: 20px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   gap: 30px;
 }
 .tutor .tutor-container .tutor-items ul i {
@@ -445,6 +482,7 @@ img {
   padding-bottom: 50px;
 }
 .course .course-container .courseLeft form .input-50 {
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
   padding-bottom: 20px;
@@ -477,7 +515,8 @@ img {
   font-weight: 600;
 }
 .course .course-container .courseRight {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .course .course-container .courseRight .course-title h2 {
   font-size: 3rem;
@@ -492,12 +531,15 @@ img {
   padding-top: 30px;
 }
 .course .course-container .courseRight .course-time ul {
+  display: -ms-flexbox;
   display: flex;
   gap: 50px;
 }
 .course .course-container .courseRight .course-time ul li {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   text-align: center;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -516,9 +558,12 @@ img {
   padding-bottom: 100px;
 }
 .event .event-title {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 50px 30px;
 }
 .event .event-title h2 {
@@ -551,10 +596,14 @@ img {
   font-weight: 700;
 }
 .event .event-container .event-items .event-img .event-overlay p {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   font-size: 1.2rem;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.45);
@@ -565,9 +614,12 @@ img {
   width: 100%;
   height: 80px;
   padding: 0 20px;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   border-left: solid 1px #ebebeb;
   border-right: solid 1px #ebebeb;
   border-bottom: solid 1px #ebebeb;
@@ -675,8 +727,10 @@ img {
   padding-bottom: 20px;
 }
 .blog .blog-container .blogRight .blog-img .blog-overlay button {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   gap: 15px;
   width: 200px;
   border: none;
@@ -706,13 +760,17 @@ footer {
 footer .footer-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   padding: 50px 30px;
 }
 footer .footer-container .footLeft {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 footer .footer-container .footLeft .foot-heading h2 {
   font-size: 2.3rem;
@@ -728,8 +786,10 @@ footer .footer-container .footLeft .foot-inputBox h3 {
   color: #fff;
 }
 footer .footer-container .footLeft .foot-inputBox form {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 footer .footer-container .footLeft .foot-inputBox form input {
   outline: none;
@@ -763,8 +823,10 @@ footer .footer-container .footRight .foot-items .foot-title h2 {
 }
 footer .footer-container .footRight .foot-items ul {
   padding-top: 20px;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   grid-gap: 5px;
 }
 footer .footer-container .footRight .foot-items ul a {
@@ -781,8 +843,10 @@ footer .footer-bottom {
 }
 footer .footer-bottom .footBoxs {
   padding: 20px 30px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 footer .footer-bottom .footBoxs .footLeft p {
   font-size: 1.2rem;
@@ -792,10 +856,12 @@ footer .footer-bottom .footBoxs .footLeft p .creator {
   color: #007bff;
 }
 footer .footer-bottom .footBoxs .footRight {
+  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
 footer .footer-bottom .footBoxs .footRight ul {
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
@@ -818,8 +884,10 @@ footer .footer-bottom .footBoxs .footRight ul p {
     width: 50%;
     height: 100%;
     background: white;
-    flex-direction: column;
-    align-items: end;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: end;
+        align-items: end;
     padding-right: 40px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   }
@@ -830,6 +898,7 @@ footer .footer-bottom .footBoxs .footRight ul p {
     padding-bottom: 50px;
   }
   .header .navbarBox .navbar .nav-menu .mobile-search form {
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
@@ -861,8 +930,10 @@ footer .footer-bottom .footBoxs .footRight ul p {
     padding-bottom: 10px;
   }
   .header .navbarBox .navbar .nav-menu .mobile-info .mobile-links {
+    display: -ms-flexbox;
     display: flex;
-    justify-content: end;
+    -ms-flex-pack: end;
+        justify-content: end;
     gap: 20px;
   }
   .header .navbarBox .navbar .nav-menu .mobile-info .mobile-links p {
@@ -870,6 +941,7 @@ footer .footer-bottom .footBoxs .footRight ul p {
     color: rgba(0, 0, 0, 0.45);
   }
   .header .navbarBox .navbar .nav-menu .mobile-info .mobile-links ul {
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
   }
@@ -967,9 +1039,12 @@ footer .footer-bottom .footBoxs .footRight ul p {
     padding: 50px 30px;
   }
   footer .footer-container .footLeft {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
   footer .footer-container .footLeft .foot-heading h2 {
     font-size: 2.3rem;
@@ -984,9 +1059,12 @@ footer .footer-bottom .footBoxs .footRight ul p {
     background: #1a1a1a;
   }
   footer .footer-bottom .footBoxs {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
     gap: 20px;
   }
 }
@@ -1044,9 +1122,12 @@ footer .footer-bottom .footBoxs .footRight ul p {
   }
   .popular .popular-title {
     background: #f8f8f8;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
     padding: 50px 30px;
   }
   .popular .popular-title h2 {
@@ -1093,9 +1174,12 @@ footer .footer-bottom .footBoxs .footRight ul p {
     padding: 50px 10px;
   }
   footer .footer-container .footLeft {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
   footer .footer-container .footLeft .foot-heading h2 {
     font-size: 2rem;
@@ -1143,22 +1227,28 @@ footer .footer-bottom .footBoxs .footRight ul p {
     padding: 0 10px;
   }
   .course .course-container .courseRight .course-time ul {
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 50px;
   }
   footer .footer-bottom {
     background: #1a1a1a;
   }
   footer .footer-bottom .footBoxs {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
     text-align: center;
     gap: 20px;
   }
   footer .footer-bottom .footBoxs .footRight {
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
     gap: 20px;
   }
 }
@@ -1204,8 +1294,10 @@ footer .footer-bottom .footBoxs .footRight ul p {
   height: 100%;
 }
 .HeadLink .HeadLink-container ul {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   height: 100%;
   gap: 10px;
 }
@@ -1295,9 +1387,12 @@ footer .footer-bottom .footBoxs .footRight ul p {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 20px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   background: #fff;
 }
 .CourseCard .CourseCard-container .CourseCard-item .CourseCard-info .CourseCard-number p {
@@ -1316,9 +1411,12 @@ footer .footer-bottom .footBoxs .footRight ul p {
   color: #f8f8f8;
 }
 .CourseCard .CourseCard-btn {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -1396,9 +1494,12 @@ footer .footer-bottom .footBoxs .footRight ul p {
 }
 .Teacher h2 {
   font-size: 3rem;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 .Teacher .teacher-container {
   display: grid;
@@ -1407,8 +1508,10 @@ footer .footer-bottom .footBoxs .footRight ul p {
   padding-top: 50px;
 }
 .Teacher .teacher-container .teacher-items {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   gap: 30px;
   background: #fff;
   padding: 40px 40px;
@@ -1539,8 +1642,10 @@ footer .footer-bottom .footBoxs .footRight ul p {
   padding-bottom: 20px;
 }
 .OurBlog-top .OurBlogbottom-container .OurBlog-img .Ourblog-overlay button {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   gap: 15px;
   width: 200px;
   border: none;
@@ -1560,9 +1665,12 @@ footer .footer-bottom .footBoxs .footRight ul p {
   top: 0;
 }
 .OurBlog-top .OurBlog-button {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   padding-top: 80px;
   padding-bottom: 30px;
 }
@@ -1726,6 +1834,7 @@ footer .footer-bottom .footBoxs .footRight ul p {
   padding-bottom: 30px;
 }
 .contact .contact-container .contactRight form .contact-input {
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
@@ -1782,7 +1891,8 @@ footer .footer-bottom .footBoxs .footRight ul p {
     padding: 0 10px;
   }
   .contact .contact-container .contactRight form .contact-input {
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
 }
 /* --------------- /Responsive-style ------------------ *//*# sourceMappingURL=main.css.map */
